@@ -5,7 +5,7 @@
 
 let name ="sahil"
 let age = 20
-let isLoggedIn = true 
+let isLoggedIn = true
 
 // ----Datatypes in JavaScript----
 // number => 2 to power 53
@@ -21,3 +21,4 @@ let isLoggedIn = true
 
 console.log(typeof null); // output- object
 console.log(typeof undefined); // output- undefined
+console.log(isLoggedIn)
