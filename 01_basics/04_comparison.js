@@ -19,3 +19,25 @@ console.log(2!=1); */
 // **("==="strick comparison-its compare inputs as well as their "datatypes")
 // console.log("2"===0); // => false
 
+// -------------------xxxxxxx--------------------------xxxxx--------------------------
+// *stack (primitive), heap (Non-primitive) memory
+
+let Name = "md sahil jamil"
+let otherName = Name
+
+otherName = "unknown_person"
+
+console.log(Name)
+console.log(otherName)
+console.log("----------------------------")
+
+let user1 = {
+    Gmail:"sahil@gmail.com",
+    age : 20
+}
+let user2 = user1
+
+user2.Gmail = "xyz@gmail.com"
+
+console.log(user1.Gmail);
+console.log(user1.Gmail);
