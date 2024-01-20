@@ -32,10 +32,41 @@ const newArr =myArr.join() // it will convert array into string & inside () will
 /*splice will print the no with the last range and when u print Array after 
   using splice it will remove range in array   
 */  
-console.log("A",myArr);
-console.log(myArr.slice(1,3));
+// console.log("A",myArr);
+// console.log(myArr.slice(1,3));
 
-console.log("B", myArr);
-console.log(myArr.splice(1,4));
+// console.log("B", myArr);
+// console.log(myArr.splice(1,4));
 
-console.log("c", myArr);
+// console.log("c", myArr);
+
+// *Array part 2
+
+const marvel_heros = ["thor","iron man","spider man"];
+const dc_heros = ["batman","superman","splash"];
+
+// marvel_heros.push(dc_heros); // push will add whole 2nd array as a element in 1st array
+// console.log(marvel_heros);
+
+const all_heros= marvel_heros.concat(dc_heros); // its add both array and make new array
+console.log(all_heros);
+console.log(all_heros[5]);
+
+// spread operator (...)
+const all_new_heros=[...marvel_heros,...dc_heros];
+console.log(all_new_heros);
+
+// flat method
+const array1=[1,2,3,[,54,2,6,3],[2,[6,4,3]]]
+console.log(array1.flat(Infinity));
+
+// to change diff. datatype into array
+
+console.log(Array.isArray("sahil"));// for checking
+console.log(Array.from("sahil")) // it will convert sahil into an array
+console.log(Array.from({name:"sahil"}))// can't make it into array
+
+let score1 =100;
+let score2 =200;
+let score3 =300;
+console.log(Array.of(score1,score2,score3)); // op-> [100,200,300]
